@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html {min-height: 100%;}
+
+body{ background: #eee url(../image/img1/back.jpg) no-repeat center ; background-size: cover; font-family:"微软雅黑";}
+/*播放器1*/
+
+.con{position: relative;width: 350px;height: 290px;margin: 150px auto;box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);border-radius: 10px;background: #222;overflow: hidden;z-index: 0;}
+.tit{width: 100%;height: 100px;background: #222;text-align: center;position: relative;}
+#name{font-size: 30px;font-weight: 300;text-decoration: none;color: #fff; padding:15px;text-shadow: 2px 2px 2px #000, 0px 0px 10px #1A6143, 0px 0px 20px #fff; display:inline-block;}
+.com_main{text-align: center;width: 100%;height: 190px;background: #982e4b; padding-top:1px;}
+#stick{height:10px;width:0px; background:#F60;border-top-right-radius:5px;border-bottom-right-radius:5px;box-shadow:-4px 0px 7px 2px #FF00C2; cursor:pointer;}
+#container{width:100%;height:10px;padding:none; margin-top:-4px; z-index:9; position:absolute; }
+#btn-group{ padding-top:15px;}
+#btn-playorpause{ background: #000 url(../image/img1/start.png) no-repeat center center; width:30px; height:30px; cursor:pointer; position:absolute; margin-top:-73px; margin-left:40px; opacity:.5; border-radius:50%;}
+#btn-prev{background:url(../image/img1/left.png) no-repeat center center; width:33px; height:21px; cursor:pointer;}
+#btn-next{background:url(../image/img1/right.png) no-repeat center center; width:33px; height:21px; cursor:pointer;}
+#btn-group li{ display:inline-block; padding:0 20px;}
+.img{ width:110px; height:110px; background:#3C9; border:5px solid #3C9 ; border-radius:50%; margin:10px auto; overflow: hidden; position:relative;}
+.img img{ width:100%; cursor:pointer; border-radius:50%;}
+.rotate{animation:rotate 10s infinite linear;-o-animation:rotate  infinite linear; -moz-animation:rotate 10s infinite linear;  -webkit-animation:rotate 10s infinite linear;}
+@keyframes rotate{from {transform: rotate(0deg);}to {transform: rotate(180deg);}}
+@-moz-keyframes rotate {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
+@-o-keyframes rotate {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
+.currentTime{ font-size:20PX;text-shadow: 2px 2px 2px #6C4E4E, 0px 0px 10px #FFFFFF, 0px 0px 20px #FFF; color:#B60E0E;;}
